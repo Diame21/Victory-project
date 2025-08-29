@@ -10,6 +10,10 @@
     <style>
     
         @media(max-width: 1251px) {
+            body{
+                overflow: hidden;
+                padding: 20px;
+            }
             .diagram {
                 display: none;
             }
@@ -18,25 +22,25 @@
         @media(max-width: 320px) {
             body {
                 overflow-y: hidden;
-                width: auto;
-                padding: 7px;
+                width: fit-content;
+                padding: 20px;
+
             }
             .diagram{
                 display: none;
             }
             .brr{
-                gap: 10px;
+                gap: 4px;
                 font-size: 10px;
             }
             .br{
-                width:50%;
+                width:20%;
             }
         }
     </style>
 </head>
 
 <body class="overflow-hidden p-1">
-    <!-- <div class="container md:w-screen p-1  "> -->
         <div class="flex justify-center items-center">
             <div class="bg-white p-8">
                 <div class="brand ">
@@ -66,7 +70,6 @@
                 <img src="loginpage.png" alt="">
             </div>
         </div>
-    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
