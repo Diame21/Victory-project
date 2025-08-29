@@ -8,50 +8,65 @@
     <link rel="icon" href="https://www.vectorlogo.zone/logos/buffer/buffer-tile.svg">
     <link rel="stylesheet" href="output.css">
     <style>
+    
         @media(max-width: 1251px) {
             .diagram {
                 display: none;
             }
         }
-        @media(min-width: 1251px) {
-            .diagram {
-                width: fit-content;
+
+        @media(max-width: 320px) {
+            body {
+                overflow: hidden;
+                width: 1000px;
+                padding: 12px;
+            }
+            .diagram{
+                display: none;
+            }
+            .brr{
+                gap: 10px;
+                font-size: 10px;
+            }
+            .br{
+                width:80%;
             }
         }
     </style>
 </head>
 
-<body class="overflow-hidden p-0">
-    <div class="flex justify-center items-center">
-        <div class="bg-white p-8">
-            <div class="brand ">
-                <img src="Buffer logo.png" alt="">
-            </div>
-            <h1 class="font-bold mt-16 text-4xl text-black">Log in</h1><br>
+<body class="overflow-hidden p-1">
+    <!-- <div class="container md:w-screen p-1  "> -->
+        <div class="flex justify-center items-center">
+            <div class="bg-white p-8">
+                <div class="brand ">
+                    <img src="Buffer logo.png" alt="">
+                </div>
+                <h1 class="font-bold mt-16 text-4xl text-black">Log in</h1><br>
 
-            <!-- <form action=""> -->
-            <label for="email" class="font-sans">Email Address</label><br>
-            <input type="text" class="p-2 w-96 border-[1px] border-[black] rounded" name="email" id="email"
-                required><br><br>
-            <label for="number" class="font-sans">Phone Number</label><br>
-            <input type="number" class="p-2 border-[1px] border-[black] rounded w-96" name="number" id="number"
-                required><br>
-            <button class="p-2 w-96 text-white bg-[blue] mt-5 rounded">Log In</button><br>
-            <div class="flex justify-normal items-center gap-28 mt-2 text-gray-500 font-semibold">
-                <label for="create account"><a href="">Create an account</a></label>
-                <label for="forget password"><a href="" class="">Forget Password?</a></label>
-            </div><br><br><br>
-            <div class="flex justify-center gap-3 items-center mt-16 text-gray-500 font-sans font-semibold">
-                <a href="">Terms of service</a>
-                <span class="">• <a href="">Policy Privacy</a></span>
-                <span class="">• <a href="">Security</a></span>
+                <!-- <form action=""> -->
+                <label for="email" class="font-sans">Email Address</label><br>
+                <input type="text" class="br p-2 w-96 border-[1px] border-[black] rounded" name="email" id="email"
+                    required><br><br>
+                <label for="number" class="font-sans">Phone Number</label><br>
+                <input type="number" class="br p-2 border-[1px] border-[black] rounded w-96" name="number" id="number"
+                    required><br>
+                <button class="br p-2 w-96 text-white bg-[blue] mt-5 rounded">Log In</button><br>
+                <div class="brr flex justify-normal items-center gap-28 mt-2 text-gray-500 font-semibold">
+                    <label for="create account"><a href="">Create an account</a></label>
+                    <label for="forget password"><a href="" class="">Forget Password?</a></label>
+                </div><br><br><br>
+                <div class="brr flex justify-center gap-3 items-center mt-16 text-gray-500 font-sans font-semibold">
+                    <a href="">Terms of service</a>
+                    <span class="">• <a href="">Policy Privacy</a></span>
+                    <span class="">• <a href="">Security</a></span>
+                </div>
             </div>
-        </div>
-        <div class="diagram">
-            <img src="loginpage.png" alt="">
+            <div class="diagram">
+                <img src="loginpage.png" alt="">
+            </div>
         </div>
     </div>
-
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
