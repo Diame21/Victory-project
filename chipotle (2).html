@@ -7,11 +7,13 @@
     <title>Chipotle -Order Now</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet" href="output.css">
+
 </head>
 
 <body>
-    <h1 class="flex justify-center text-2xl font-extrabold text-[#451400] text-center">CAVEAT:<p class="text-center text-lg font-bold text-[#451400]">This is a student's project and not an attempt to clone the existing webpage</p>
-    </h1>
+    <h1 class="text-4xl font-extrabold text-[#451400] text-center">CAVEAT</h1>
+    <p class="text-center font-bold text-[#451400]">This is a student's project and not an attempt to clone the existing
+        webpage</p>
     <!-- Navbar  -->
     <nav>
         <div class="bg-gray-200 flex flex-wrap justify-between items-center mx-auto p-4">
@@ -61,22 +63,26 @@
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M1 1h15M1 7h15M1 13h15" />
                 </svg>
-            </button><br><br><br>
+            </button>
 
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4 mx-auto">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4 ms-auto">
                 <ul>
                     <li class="flex justify-center items-center gap-5">
-                        <span class="fa fa-location-dot md:hover:text-red-900  text-[#451400] text-2xl"></span>
-                        <a href="#"
-                            class="block py-2 px-3 text-[#451400] text-xs font-semibold font-serif md:border-0 md:hover:text-red-900 md:p-0">
-                            FIND A CHIPOTLE
-                        </a>
+                        <div class="flex justify-center items-center">
+                            <span class="fa fa-location-dot md:hover:text-red-900  text-[#451400] text-2xl"></span>
+                            <a href="#"
+                                class="block py-2 px-3 text-[#451400] text-xs font-semibold font-serif md:border-0 md:hover:text-red-900 md:p-0">
+                                FIND A CHIPOTLE
+                            </a>
+                        </div>
 
-                        <span class="fa-regular fa-user md:hover:text-red-900  text-[#451400] text-2xl"></span>
-                        <a href="#"
-                            class="block py-2 px-3 text-[#451400] text-xs font-semibold font-serif md:border-0 md:hover:text-red-900 md:p-0">
-                            SIGN IN/ JOIN
-                        </a><br>
+                        <div class="hidden md:flex justify-center items-center">
+                            <span class="fa-regular fa-user md:hover:text-red-900  text-[#451400] text-2xl"></span>
+                            <a href="#"
+                                class="block py-2 px-3 text-[#451400] text-xs font-semibold font-serif md:border-0 md:hover:text-red-900 md:p-0">
+                                SIGN IN/ JOIN
+                            </a>
+                        </div>
                         <span class="fa fa-clipboard text-2xl  text-[#451400] md:hover:text-red-900"></span>
                     </li>
                 </ul>
@@ -107,17 +113,22 @@
 
 
     <!-- NEW ONE -->
-    <div class="relative overflow-hidden">
+    <div class="relative overflow-hidden mb-20">
 
         <!-- Video BG-->
-        <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+        <video autoplay muted loop playsinline
+            class="absolute hidden md:block top-0 left-0 w-full h-full object-cover -z-10">
             <!-- <source src="your-video.mp4" type="video/mp4"> -->
-            <source data-src="https://www.youtube.com/shorts/v4JaJAaAF-s?feature=share"="video/mp4" />
-            <p>Your browser does not support the video tag.</p>
+            <source src="CarneAsada-Hero-Desktop.mp4" type="video/mp4" />
+        </video>
+        <video autoplay muted loop playsinline
+            class="absolute block md:hidden top-0 left-0 w-full h-full object-cover -z-10">
+            <!-- <source src="your-video.mp4" type="video/mp4"> -->
+            <source src="CarneAsada-Hero-Mobile.mp4" type="video/mp4" />
         </video>
 
         <!-- The content -->
-        <div class="bg-black/60">
+        <div class="">
             <div class="p-7 ml-28 mt-4">
                 <h1 class="text-4xl text-white mt-14">SUMMER'S <br> HEATING UP</h1><br>
                 <button class="rounded-full bg-white p-3 text-[#b14013] border-none">
@@ -149,14 +160,13 @@
 
 
 
-    <br><br><br><br><br><br>
 
     <!-- FIRST CARD  -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto border-yellow-950 p-8">
+    <div class="hidden md:grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto border-yellow-950 p-8">
 
         <!-- Left Card -->
         <div class="bg-white p-6 shadow-md rounded-md flex justify-center items-center gap-2">
-            <div>
+            <div class="w-6/12">
                 <h2 class="text-2xl font-bold text-brown-800 mb-2 font-serif">INTRODUCING<br><span
                         class="text-2xl">CHIPOTLE U <br>
                         REWARDS</span></h2><br>
@@ -170,14 +180,14 @@
                 <p class="text-xs text-gray-500 mt-2">*Chipotle U program benefits at chipotle.com/chipotle-u-rewards.
                     Full Chipotle Rewards terms at <a class="underline" href="">chipotle.com/rewards-terms</a></p>
             </div>
-            <div>
-                <img src="lfd.jpg" class="w-auto" alt="">
+            <div class="h-full w-6/12">
+                <img src="lfd.jpg" class="h-full w-full" alt="">
             </div>
         </div>
 
         <!-- Right Card -->
         <div class="bg-white p-6 shadow-md rounded-md flex justify-center items-center gap-3">
-            <div>
+            <div class="w-6/12">
                 <h2 class="text-2xl font-bold text-brown-800 mb-2 font-serif">INTRODUCING<br><span
                         class="text-2xl">BUILD-YOUR-OWN
                         CHIPOTLE</span></h2><br><br>
@@ -196,15 +206,77 @@
                     fees apply for delivery. Additional terms apply. <a class="underline" href="#">See Full Terms</a>.
                 </p>
             </div>
-            <div>
-                <img src="ffd.jpg" alt="">
+            <div class="h-full w-6/12">
+                <img src="ffd.jpg" class="h-full w-full" alt="">
             </div>
         </div>
     </div><br><br><br><br>
 
 
 
-    <h1 class="md:text-3xl text-3xl font-[Gotham] font-extrabold text-center text-[#451400]  ">CROWD PLEASERS</h1>
+    <!-- small screen  -->
+    <!-- FIRST CARD  -->
+    <div class="grid md:hidden grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto border-yellow-950 p-8">
+
+        <!-- Left Card -->
+        <div class="bg-white rounded shadow-md overflow-hidden">
+            <div class="relative">
+                <img src="lfm.jpg" alt="Catering" class="w-full h-auto object-cover">
+                
+            </div>
+            <div class="p-4 space-y-2">
+                 <h2 class="text-2xl font-bold text-brown-800 mb-2 font-serif">INTRODUCING<br><span
+                        class="text-2xl">BUILD-YOUR-OWN
+                        CHIPOTLE</span></h2><br><br>
+                <p class="text-black mb-2 ">
+                    A whole new way to serve Real food for 4-6 people. It's a fast, easy, and delicious option that will
+                    satisfy any small group. Order it now with code <strong>TRYBYOC</strong> for $10 off your first
+                    order*.
+                </p>
+                <button class="bg-[#451400] hover:bg-[#5b2f20] text-white font-semibold py-2 px-5 rounded p-1 w-full">
+                    ORDER NOW
+                </button>
+                <p class="text-xs text-gray-500 mt-2">
+                    *Valid 8/26 to 10/21 or 500K redemptions, whichever comes first. Order via Chipotle web or mobile
+                    app.
+                    US only. Use of promo code TRYBYOC required. Chips & dips item excluded. Higher menu price and add'l
+                    fees apply for delivery. Additional terms apply. <a class="underline" href="#">See Full Terms</a>.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Right card -->
+        <div class="bg-white rounded shadow-md overflow-hidden">
+            <div class="relative">
+                <img src="ffm.png" alt="Catering" class="w-full h-auto object-cover">
+                
+            </div>
+            <div class="p-4 space-y-2">
+                 <h2 class="text-2xl font-bold text-brown-800 mb-2 font-serif">INTRODUCING<br><span
+                        class="text-2xl">BUILD-YOUR-OWN
+                        CHIPOTLE</span></h2><br><br>
+                <p class="text-black mb-2 ">
+                    A whole new way to serve Real food for 4-6 people. It's a fast, easy, and delicious option that will
+                    satisfy any small group. Order it now with code <strong>TRYBYOC</strong> for $10 off your first
+                    order*.
+                </p>
+                <button class="bg-[#451400] hover:bg-[#5b2f20] text-white font-semibold py-2 px-5 rounded p-1 w-full">
+                    ORDER NOW
+                </button>
+                <p class="text-xs text-gray-500 mt-2">
+                    *Valid 8/26 to 10/21 or 500K redemptions, whichever comes first. Order via Chipotle web or mobile
+                    app.
+                    US only. Use of promo code TRYBYOC required. Chips & dips item excluded. Higher menu price and add'l
+                    fees apply for delivery. Additional terms apply. <a class="underline" href="#">See Full Terms</a>.
+                </p>
+            </div>
+        </div>
+
+    </div><br><br><br><br>
+
+
+
+    <h1 class="md:text-3xl text-3xl font-[Gotham] font-extrabold text-center text-[#451400]">CROWD PLEASERS</h1>
 
     <!-- SECOND CARD  -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto p-7">
@@ -297,7 +369,7 @@
             </div><br>
 
             <!-- Column 4: App & Social -->
-            <div class="space-y-4 flex justify-center items-center gap-48 ml-24">
+            <div class="space-y-4 flex flex-col md:flex-row justify-center items-center gap-48">
                 <div><br>
                     <p class="font-bold text-xl mb-1">DOWNLOAD OUR APP</p>
                     <div class="flex gap-2">
@@ -322,7 +394,8 @@
             <span>© 2025 Chipotle Mexican Grill</span>
         </div>
         <!-- Bottom info -->
-        <div class="mt-8 border-t mb-7 flex flex-col md:flex-row justify-center items-center gap-6 text-xs text-gray-500">
+        <div
+            class="mt-8 border-t mb-7 flex flex-col md:flex-row justify-center items-center gap-6 text-xs text-gray-500">
             <div class="flex flex-wrap justify-center gap-10 text-center">
                 <a href="#" class="hover:underline">Accessibility Statement</a>
                 <a href="#" class="hover:underline">Privacy Notice</a>
