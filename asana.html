@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asana</title>
+    <title>Manage your team's work,projects, & task online • Asana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="output.css">
 </head>
+
 <body>
-   <h1 class="text-4xl font-extrabold text-green-600 text-center">CAVEAT</h1>
-    <p class="text-center font-bold text-green-600">This is a student's project and not an attempt to clone the existing webpage</p>
+    <h1 class="text-4xl font-extrabold text-green-600 text-center">CAVEAT</h1>
+    <p class="text-center font-bold text-green-600">This is a student's project and not an attempt to clone the existing
+        webpage</p>
     <nav class="bg-black border-gray-200 ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -35,20 +41,20 @@
                         <a href="chipotle (2).html"
                             class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Chipotle</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="canva.html"
                             class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Canva</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="asana.html"
                             class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Asana
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="simform.html"
                             class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Simford
                         </a>
-                    </li>
+                    </li> -->
                     <!-- <li>
                         <a href="java_ass6.html"
                             class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Function
@@ -57,6 +63,817 @@
                 </ul>
             </div>
         </div>
-    </nav><br><br> 
+    </nav><br><br>
+
+
+
+
+    <!-- real code  -->
+
+    <nav class="bg-white border-gray-200 sticky top-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-1 rtl:space-x-reverse">
+                <img src="images/asanalogs.png" class="h-8" alt="Asana Logo" />
+                <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+            </a>
+            <div class="flex md:order-2 space-x-3 gap-4 sm:gap-1 md:space-x-0 rtl:space-x-reverse">
+                <!-- <img src="images/asanalogs.png" class="h-8 lg:hidden" alt="Asana Logo" /> -->
+                <span class="bi bi-globe text-gray-500 hover:text-black text-2xl"></span>
+                <div class="border-l-2 border-gray-500"> </div>
+                <p
+                    class="text-gray-500 bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center ">
+                    Contact
+                    sales
+                </p>
+                <span class=""></span>
+                <button type="button"
+                    class="text-gray-500 bg-white hover:text-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center ">Log
+                    In
+                </button>
+                <button type="button"
+                    class="text-white bg-black rounded hover:bg-pink-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center ">Get
+                    started</button>
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                    <!-- <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-blackrounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Services</a>
+                    </li> -->
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-500 hover:bg-black md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 md:w-auto">Product
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-black">Dashboard</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-black ">Earnings</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100 text-black">Sign
+                                    out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarr"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-500 hover:bg-black md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 md:w-auto">Solutions
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbarr"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-black">Dashboard</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-black ">Earnings</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100 text-black">Sign
+                                    out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbarrr"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-500 hover:bg-black md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 md:w-auto">Resources
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbarrr"
+                            class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-black">Dashboard</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-black ">Earnings</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100 text-black">Sign
+                                    out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-500 rounded-sm hover:bg-black md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0">Pricing</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-blackrounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-blackrounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alert section  -->
+    <div id="alert-border-1" class="flex items-center p-4 mb-4 text-blue-800 border-t-4 bg-blue-300" role="alert">
+        <!-- <svg class="shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            viewBox="0 0 20 20">
+            <path
+                d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+        </svg> -->
+        <div class="flex gap-3 items-center ms-10 text-sm font-medium">
+            Meet your new AI Teammates. Join the webinar to see human + AI collaboration in action
+            <div class="flex items-center">
+                <a href="#" class="font-semibold underline hover:no-underline gap-4">Register now</a>
+                <span class="bi bi-arrow-right-short text-xl"></span>
+            </div>
+        </div>
+        <button type="button"
+            class="ms-auto -mx-1.5 -my-1.5 bg-transparent text-blue-500 rounded-lg focus:ring-2 focus:ring-blue-400 p-1.5 hover:bg-blue-200 inline-flex items-center justify-center h-8 w-8"
+            data-dismiss-target="#alert-border-1" aria-label="Close">
+            <span class="sr-only">Dismiss</span>
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+        </button>
+    </div>
+
+
+    <!-- Hero Section -->
+    <section class="bg-pink-50 py-20 px-6 md:px-12 text-center ">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-6xl md:text-5xl font-bold text-rose-900">
+                Where your teams and AI <br class="hidden sm:block"> coordinate work together
+            </h1>
+            <p class="mt-5 text-base md:text-lg text-rose-800">
+                See how your work connects to goals while working alongside AI that understands your business.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="mt-8 flex justify-center gap-4 flex-wrap">
+                <a href="#"
+                    class="bg-rose-900 text-white hover:bg-rose-100 hover:text-black text-sm font-medium py-3 px-6 rounded-full transition">
+                    Get started
+                </a>
+                <a href="#"
+                    class="border border-rose-900 text-rose-900 text-sm font-medium py-3 px-6 rounded-full hover:bg-rose-100 transition">
+                    See how it works
+                </a>
+            </div><br><br>
+            <video autoplay muted loop playsinline
+                class=" hidden md:block top-0 left-0 w-full h-full object-cover -z-10">
+                <source src="images/asana  HomePage Header v3.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </section>
+
+
+    <div class="max-w-7xl mx-auto py-12 px-4 flex flex-col lg:flex-row items-center justify-between gap-10">
+
+        <!-- Text -->
+        <div class="text-center lg:text-left">
+            <p class="text-3xl font-medium">
+                85% of Fortune 100 <br>
+                companies choose Asana<sup>1</sup>
+            </p>
+        </div>
+
+        <!-- Logos -->
+        <div class="flex flex-wrap items-center justify-center gap-8 ">
+            <img src="images/Amazon-Logo-1.webp" alt="Amazon" class=" h-6 object-cover" />
+            <img src="images/Accenture.svg.png" alt="Accenture" class="h-6 object-cover" />
+            <img src="images/johhhnnn3.jpg" alt="Johnson & Johnson" class="h-6 object-cover" />
+            <img src="images/Dell-Logo.png" alt="Dell" class="h-6 object-cover" />
+            <img src="images/Merck_Logo.webp" alt="Merck" class="h-6 object-cover" />
+        </div>
+    </div>
+
+    <!-- Headline Section -->
+    <div class="max-w-5xl mx-auto px-4 pb-16 text-center lg:text-left">
+        <h2 class="text-4xl lg:text-5xl font-semibold leading-tight">
+            See how Asana keeps work <br class="hidden lg:block" />
+            moving across use cases
+        </h2>
+    </div>
+
+    <!-- Card section 2  -->
+    <!-- Left Arrow Button -->
+    <div class="flex justify-end mb-3">
+        <!-- Slider controls -->
+        <button type="button"
+            class="top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+    </div><br><br>
+
+    <!-- card section  -->
+    <div class="flex  gap-5 p-6 bg-gray-50">
+        <!-- Card 1 -->
+        <div class="w-full sm:w-1/2 md:w-1/4 bg-white p-6 rounded-lg shadow">
+            <div class="mb-4">
+                <!-- Icon placeholder -->
+                <div class="h-28 w-28 rounded-md">
+                    <img src="images/Illustration1.webp" alt="">
+                </div>
+            </div>
+            <h2 class="text-lg font-semibold mb-2">Campaign management</h2>
+            <p class="text-sm text-gray-600 mb-4">Plan, track, and complete your campaigns all in one place.</p><br><br>
+            <a href="#" class="text-xl font-medium text-black flex items-center gap-1 hover:underline">
+                See campaign
+            </a>
+            <p class="hover:underline text-xl text-black font-medium ">management <span
+                    class="fa fa-circle-arrow-right text-2xl"></span></p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="w-full sm:w-1/2 md:w-1/4 bg-white p-6 rounded-lg shadow">
+            <div class="mb-4">
+                <div class="h-28 w-28 rounded-md">
+                    <img src="images/Illustratio2s.webp" alt="" srcset="">
+                </div>
+            </div>
+            <h2 class="text-lg font-semibold mb-2">Creative production</h2>
+            <p class="text-sm text-gray-600 mb-4">Accelerate creative work by automating workflows from start to finish.
+            </p><br><br>
+            <a href="#" class="text-xl font-medium text-black flex items-center gap-1 hover:underline">
+                See creative production
+            </a>
+            <span class="fa fa-circle-arrow-right text-2xl"></span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="w-full sm:w-1/2 md:w-1/4 bg-white p-6 rounded-lg shadow">
+            <div class="mb-4">
+                <div class="h-28 w-28 rounded-md">
+                    <img src="images/Illustration3.webp" alt="">
+                </div>
+            </div>
+            <h2 class="text-lg font-semibold mb-2">Project intake</h2>
+            <p class="text-sm text-gray-600 mb-4">Capture, prioritize, and assign requests automatically so your teams
+                have more time to work.</p><br><br>
+            <a href="#" class="text-xl font-medium text-black flex items-center gap-1 hover:underline">
+                See project intake
+                <span class="fa fa-circle-arrow-right text-2xl"></span>
+            </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="w-full sm:w-1/2 md:w-1/4 bg-white p-6 rounded-lg shadow">
+            <div class="mb-4">
+                <div class="h-28 w-28 rounded-md">
+                    <img src="images/Illustration4.webp">
+                </div>
+            </div>
+            <h2 class="text-lg font-semibold mb-2">Product launches</h2>
+            <p class="text-sm text-gray-600 mb-4">Coordinate teams, tasks, and timelines to keep every launch on
+                schedule.</p><br><br>
+            <a href="#" class="text-xl font-medium text-black flex items-center gap-1 hover:underline">
+                See project launches
+                <span class="fa fa-circle-arrow-right text-2xl"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- body section 1  -->
+    <div class="bg-blue-300 p-6 ">
+        <h1 class="text-blue-800 font-bold text-4xl">What sets Asana apart</h1> <br><br>
+        <div class="flex justify-center gap-7">
+            <div class="flex gap-2 group bg-blue-950 text-blue-300 w-full sm:w-1/2 md:w-1/4 p-6 rounded-lg shadow">
+                <div>
+                    <p>More clarity and accountability</p>
+                    <p>Connect strategic goals to the teams that help achieve them.
+                        Keep your company on track with AI working alongside your teams.</p><br><br><br><br>
+                    <button class="font-bold text-xl w-[90%] text-blue-500 border rounded-full bg-transparent">Learn
+                        about goals</button>
+                </div>
+                <div class="hidden group-hover:inline">
+                    <img src="images/WEB-homepage-goals-en_us.22webp.webp" alt="" srcset="">
+                </div>
+            </div>
+            <div class="flex bg-blue-950 group text-blue-300 w-full sm:w-1/2 md:w-1/4 p-6 rounded-lg shadow">
+                <div>
+                    <p>More clarity and accountability</p>
+                    <p>Connect strategic goals to the teams that help achieve them.
+                        Keep your company on track with AI working alongside your teams.</p><br><br><br><br>
+                    <button class="font-bold text-xl text-blue-500 border w-[90%] rounded-full bg-transparent">Learn
+                        about
+                        goals</button>
+                </div>
+                <div class="hidden group-hover:inline">
+                    <img src="images/WEB-homepage-AI-en_us.webp" class="w-full " alt="">
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br><br><br>
+
+
+    <!-- body sections  -->
+    <div class="p-4 bg-white">
+        <!-- body section 2  -->
+        <div>
+            <div>
+                <h1 class="text-5xl font-bold">Connect over 300+ <br> integrations</h1><br>
+                <p class="text-xl font-semibold">Asana connects with the enterprise tools your <br>
+                    organization already uses, right out of the box.</p><br><br>
+                <button class="bg-black text-white text-xl rounded-full p-5">See all integrations</button>
+            </div>
+        </div><br><br>
+
+        <!-- body section 3  -->
+        <div>
+            <div>
+                <h1 class="text-5xl font-bold">The world's top companies trust<br> Asana</h1><br><br><br>
+                <button class="bg-transparent border text-black text-xl rounded-full p-5">See all case studies</button>
+            </div>
+
+            <!-- button section  -->
+
+            <div id="indicators-carousel" class="relative w-full bg-white" data-carousel="static">
+                <div class="flex justify-end mb-3">
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 1 1 5l4 4" />
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 rounded-lg sm:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out w-full border " data-carousel-item="active">
+                        <div class="flex justify-between items-start gap-8 w-full">
+                            <div class="w-4/12 p-4">
+                                <img src="images/Danone _quote.svg" alt=""><br><br><br><br><br>
+                                <div class="border-b-2 border-gray-800"></div>
+                                <h6 class="text-sm text-gray-500">COMPANY SIZE</h6>
+                                <P class="font-semibold text-xl">Enterprise</P><br><br>
+
+                                <h6 class="text-sm text-gray-500">INDUSTRY</h6>
+                                <P class="font-semibold text-xl">Food/Hospitality</P>
+
+                            </div>
+                            <div class="bg-blue-200 p-4 w-8/12">
+                                <div class="flex text-3xl font-bold text-blue-900">
+                                    <span class="bi bi-quote"></span>
+                                    <h3>Asana makes everything shareable, which <br> saves us time executing programs
+                                        <br>
+                                        because it's so much easier to replicate <br> and learn from what others have
+                                        done.
+                                    </h3>
+                                </div>
+                                <div class="p-6">
+                                    <p class="font-bold text-blue-900">Simon Levinson</p>
+                                    <p class="text-blue-900">Global Digital Manufacturing Process Innovation Manager,
+                                        Danone.</p>
+                                </div><br><br><br>
+                                <div class="flex justify-end">
+                                    <button class="border border-blue-900 p-4 rounded-full">Read case study</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out w-full border " data-carousel-item="active">
+                        <div class="flex justify-between items-start gap-8 w-full">
+                            <div class="w-4/12 p-4">
+                                <img src="images/Danone _quote.svg" class="w-fit" alt=""><br><br><br><br><br>
+                                <div class="border-b-2 border-gray-800"></div>
+                                <h6 class="text-sm text-gray-500">COMPANY SIZE</h6>
+                                <P class="font-semibold text-xl">Enterprise</P><br><br>
+
+                                <h6 class="text-sm text-gray-500">INDUSTRY</h6>
+                                <P class="font-semibold text-xl">Food/Hospitality</P>
+
+                            </div>
+                            <div class="bg-yellow-300 p-4 w-8/12">
+                                <div class="flex text-3xl font-bold text-blue-900">
+                                    <span class="bi bi-quote"></span>
+                                    <h3>Asana makes everything shareable, which <br> saves us time executing programs
+                                        <br>
+                                        because it's so much easier to replicate <br> and learn from what others have
+                                        done.
+                                    </h3>
+                                </div>
+                                <div class="p-6">
+                                    <p class="font-bold text-blue-900">Simon Levinson</p>
+                                    <p class="text-blue-900">Global Digital Manufacturing Process Innovation Manager,
+                                        Danone.</p>
+                                </div><br><br><br>
+                                <div class="flex justify-end">
+                                    <button class="border border-blue-900 p-4 rounded-full">Read case study</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out w-full border " data-carousel-item="active">
+                        <div class="flex justify-between items-start gap-8 w-full">
+                            <div class="w-4/12 p-4">
+                                <img src="images/Danone _quote.svg" alt=""><br><br><br><br><br>
+                                <div class="border-b-2 border-gray-800"></div>
+                                <h6 class="text-sm text-gray-500">COMPANY SIZE</h6>
+                                <P class="font-semibold text-xl">Enterprise</P><br><br>
+
+                                <h6 class="text-sm text-gray-500">INDUSTRY</h6>
+                                <P class="font-semibold text-xl">Food/Hospitality</P>
+
+                            </div>
+                            <div class="bg-purple-500 p-4 w-8/12">
+                                <div class="flex text-3xl font-bold text-blue-900">
+                                    <span class="bi bi-quote"></span>
+                                    <h3>Asana makes everything shareable, which <br> saves us time executing programs
+                                        <br>
+                                        because it's so much easier to replicate <br> and learn from what others have
+                                        done.
+                                    </h3>
+                                </div>
+                                <div class="p-6">
+                                    <p class="font-bold text-blue-900">Simon Levinson</p>
+                                    <p class="text-blue-900">Global Digital Manufacturing Process Innovation Manager,
+                                        Danone.</p>
+                                </div><br><br><br>
+                                <div class="flex justify-end">
+                                    <button class="border border-blue-900 p-4 rounded-full">Read case study</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out w-full border " data-carousel-item="active">
+                        <div class="flex justify-between items-start gap-8 w-full">
+                            <div class="w-4/12 p-4">
+                                <img src="images/Spotify_40px_quote.svg" alt=""><br><br><br><br><br>
+                                <div class="border-b-2 border-gray-800"></div>
+                                <h6 class="text-sm text-gray-500">COMPANY SIZE</h6>
+                                <P class="font-semibold text-xl">Enterprise</P><br><br>
+
+                                <h6 class="text-sm text-gray-500">INDUSTRY</h6>
+                                <P class="font-semibold text-xl">Food/Hospitality</P>
+
+                            </div>
+                            <div class="bg-green-500 p-4 w-8/12">
+                                <div class="flex text-3xl font-bold text-blue-900">
+                                    <span class="bi bi-quote"></span>
+                                    <h3>Asana makes everything shareable, which <br> saves us time executing programs
+                                        <br>
+                                        because it's so much easier to replicate <br> and learn from what others have
+                                        done.
+                                    </h3>
+                                </div>
+                                <div class="p-6">
+                                    <p class="font-bold text-blue-900">Simon Levinson</p>
+                                    <p class="text-blue-900">Global Digital Manufacturing Process Innovation Manager,
+                                        Danone.</p>
+                                </div><br><br><br>
+                                <div class="flex justify-end">
+                                    <button class="border border-blue-900 p-4 rounded-full">Read case study</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out w-full border " data-carousel-item="active">
+                        <div class="flex justify-between items-start gap-8 w-full">
+                            <div class="w-4/12 p-4">
+                                <img src="images/Danone _quote.svg" alt=""><br><br><br><br><br>
+                                <div class="border-b-2 border-gray-800"></div>
+                                <h6 class="text-sm text-gray-500">COMPANY SIZE</h6>
+                                <P class="font-semibold text-xl">Enterprise</P><br><br>
+
+                                <h6 class="text-sm text-gray-500">INDUSTRY</h6>
+                                <P class="font-semibold text-xl">Food/Hospitality</P>
+
+                            </div>
+                            <div class="bg-red-500 p-4 w-8/12">
+                                <div class="flex text-3xl font-bold text-blue-900">
+                                    <span class="bi bi-quote"></span>
+                                    <h3>Asana makes everything shareable, which <br> saves us time executing programs
+                                        <br>
+                                        because it's so much easier to replicate <br> and learn from what others have
+                                        done.
+                                    </h3>
+                                </div>
+                                <div class="p-6">
+                                    <p class="font-bold text-blue-900">Simon Levinson</p>
+                                    <p class="text-blue-900">Global Digital Manufacturing Process Innovation Manager,
+                                        Danone.</p>
+                                </div><br><br><br>
+                                <div class="flex justify-end">
+                                    <button class="border border-blue-900 p-4 rounded-full">Read case study</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slider indicators -->
+                <div
+                    class="absolute z-30 sm:mt-20 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse -bottom-11 left-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full text-yellow-600" aria-current="true"
+                        aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full text-yellow-600" aria-current="false"
+                        aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full text-yellow-600" aria-current="false"
+                        aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full text-yellow-600" aria-current="false"
+                        aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full text-yellow-600" aria-current="false"
+                        aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                </div>
+
+            </div>
+        </div>
+    </div><br><br><br><br><br><br>
+
+
+
+
+    <!-- Card section 1  -->
+
+    <div class="max-w-7xl mx-auto px-4 py-10 mt-36">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <div class="flex flex-col items-start">
+                <img src="images/Forrester-CWM-Card-Image.webp" alt="Forrester Wave Leader 2025"
+                    class="rounded-xl w-full">
+                <h3 class="mt-4 text-lg font-medium leading-tight">
+                    A Leader in The Forrester Wave: Collaborative Work Management Tools 2025 Report
+                </h3>
+                <a href="#" class="mt-2 text-sm font-semibold text-black hover:underline inline-flex items-center">
+                    Get the Report
+                    <span class="fa fa-circle-arrow-right text-3xl"></span>
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col items-start">
+                <img src="images/Gartner-CWM-Card-Image.webp" alt="Gartner 2024 CWM" class="rounded-xl w-full">
+                <h3 class="mt-4 text-lg font-medium leading-tight">
+                    A Leader in the 2024 Gartner Magic Quadrant for Collaborative Work Management two years in a row
+                </h3>
+                <a href="#" class="mt-2 text-sm font-semibold text-black hover:underline inline-flex items-center">
+                    Get the Report
+                    <span class="fa fa-circle-arrow-right text-3xl"></span>
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex flex-col items-start">
+                <img src="images/-Gartner-APMR-Card-Image.webp" alt="Gartner Adaptive PMR 2024"
+                    class="rounded-xl w-full">
+                <h3 class="mt-4 text-lg font-medium leading-tight">
+                    A Leader in the 2024 Gartner Magic Quadrant for Adaptive Project Management and Reporting
+                </h3>
+                <a href="#" class="mt-2 text-sm font-semibold text-black hover:underline inline-flex items-center">
+                    Get the Report
+                    <span class="fa fa-circle-arrow-right text-2xl"></span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Last part   -->
+    <!-- SECTION: Footer -->
+    <footer class="bg-[#55002c] text-white px-9 py-12">
+        <div class="min-h-screen flex items-center px-6 ">
+            <div class="max-w-xl text-white space-y-6">
+                <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+                    The only platform <br>that can support <br>your company at <br>any scale
+                </h1>
+                <button class="bg-white text-[#660033] font-medium px-6 py-3 rounded-full hover:opacity-90 transition">
+                    Get started
+                </button>
+                <p class="text-xs mt-4">
+                    1. Accurate as of December 2023, includes free and paid users.
+                </p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 p-10 text-sm">
+            <!-- Column 1 -->
+            <div>
+                <h4 class="font-bold mb-4">New to Asana?</h4>
+                <ul class="space-y-3">
+                    <li>Product overview</li>
+                    <li>All features</li>
+                    <li>Latest feature release</li>
+                    <li>Pricing</li>
+                    <li>Starter plan</li>
+                    <li>Advanced plan</li>
+                    <li>Enterprise</li>
+                    <li>App integrations</li>
+                    <li>AI work management</li>
+                    <li>Project management</li>
+                    <li>Resource management</li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div>
+                <h4 class="font-bold mb-4">Use cases</h4>
+                <ul class="space-y-3">
+                    <li>Campaign management</li>
+                    <li>Content calendar</li>
+                    <li>Creative production</li>
+                    <li>Goal management</li>
+                    <li>New hire onboarding</li>
+                    <li>Organizational planning</li>
+                    <li>Product launches</li>
+                    <li>Resource planning</li>
+                    <li>Strategic planning</li>
+                    <li>Project intake</li>
+                    <li>All use cases</li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div>
+                <h4 class="font-bold mb-4">Solutions</h4>
+                <ul class="space-y-3">
+                    <li>Small business</li>
+                    <li>Marketing</li>
+                    <li>Operations</li>
+                    <li>IT</li>
+                    <li>Product</li>
+                    <li>Sales</li>
+                    <li>Healthcare</li>
+                    <li>Retail</li>
+                    <li>Education</li>
+                    <li>Nonprofits</li>
+                    <li>Startups</li>
+                    <li>All teams</li>
+                </ul>
+            </div>
+
+
+            <!-- Column 4 -->
+            <div>
+                <h4 class="font-bold mb-4">Resources</h4>
+                <ul class="space-y-3">
+                    <li>Help Center</li>
+                    <li>Get support</li>
+                    <li>Asana Academy</li>
+                    <li>Certifications</li>
+                    <li>Forum</li>
+                    <li>Resource center</li>
+                    <li>Events and webinars</li>
+                    <li>Project templates</li>
+                    <li>Customer Success</li>
+                    <li>Developers and API</li>
+                    <li>Partners</li>
+                    <li>Sitemap</li>
+                </ul>
+            </div>
+
+            <!-- Column 5 -->
+            <div>
+                <h4 class="font-bold mb-4">Company</h4>
+                <ul class="space-y-3">
+                    <li>About us</li>
+                    <li>Leadership</li>
+                    <li>Customers</li>
+                    <li>Careers</li>
+                    <li>Inside Asana</li>
+                    <li>Culture</li>
+                    <li>Press</li>
+                    <li>Investor relations</li>
+                    <li>Trust and security</li>
+                    <li>Privacy</li>
+                    <li>Supplier responsibility</li>
+                    <li>Sustainability and ESG</li>
+                </ul>
+            </div>
+        </div><br><br>
+
+
+        <!--social part -->
+        <div class="h-44 bg-[#660033] flex flex-col md:flex-row justify-around items-center gap-3">
+            <div class="flex items-center gap-1 flex-wrap">
+                <span class="bi bi-c-circle text-sm"></span>
+                <p class="text-sm">2025 Asana, Inc.</p>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bi bi-globe text-2xl font-extralight"></span>
+                <span class="text-sm">English</span>
+            </div>
+
+            <!-- Center: Social Icons -->
+            <div class="flex justify-normal gap-2">
+                <div class="bg-black rounded-full p-2"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                        class="w-4 h-4" alt="X"></div>
+                <div class="bg-black rounded-full p-2"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+                        class="w-4 h-4" alt="LinkedIn"></div>
+                <div class="bg-black rounded-full p-2"><img
+                        src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="w-4 h-4" alt="Instagram">
+                </div>
+                <div class="bg-black rounded-full p-2"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                        class="w-4 h-4" alt="Facebook"></div>
+                <div class="bg-black rounded-full p-2"><img
+                        src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" class="w-4 h-4" alt="YouTube">
+                </div>
+            </div>
+
+            <!-- Right: Links & Buttons -->
+            <p><a href="#" class="hover:underline text-sm">Terms & Privacy</a></p>
+            <div class="flex items-center gap-4 flex-wrap">
+                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                    alt="App Store" class="h-8">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                    alt="Google Play" class="h-8">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
+
 </html>
