@@ -1,12 +1,243 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Product Engineering Company | AI/ML and Data | Simform</title>
+    <link rel="icon" type="image/x-icon" href="https://www.simform.com/wp-content/uploads/2019/07/cropped-favicon.webp" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="output.css">
+    <style>
+        /* Reset & base */
+        :root {
+            --blue: #0b6eff;
+            --dark: #0b1730;
+            --muted: #6b7280;
+            --bg: #f7f9fc;
+            --card: #ffffff;
+            --container: 1100px;
+            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--dark);
+            line-height: 1.45
+        }
+
+        .wrap {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 24px
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(90deg, #ffffff 0%, #f0f6ff 100%);
+            border-bottom: 1px solid rgba(11, 23, 48, 0.06)
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 0
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700
+        }
+
+        .logo img {
+            height: 36px
+        }
+
+        nav ul {
+            display: flex;
+            gap: 18px;
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        nav a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .cta-btn {
+            background: rgb(201, 94, 45);
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700
+        }
+
+        /* Hero */
+        .hero {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            padding: 48px 0
+        }
+
+        .hero-left {
+            flex: 1
+        }
+
+        .eyebrow {
+            color: var(--muted);
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 12px 0 10px
+        }
+
+        p.lead {
+            color: var(--muted);
+            margin: 0 0 18px
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 12px
+        }
+
+        .ghost {
+            border: 1px solid rgba(11, 23, 48, 0.08);
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600
+        }
+
+        .hero-right {
+            flex: 1;
+            display: flex;
+            justify-content: center
+        }
+
+        .hero-illustration {
+            width: 100%;
+            max-width: 520px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(11, 23, 48, 0.08)
+        }
+
+        /* Trusted logos */
+        .trusted {
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap
+        }
+
+        .trusted img {
+            height: 28px;
+            opacity: 0.85
+        }
+
+        /* Cards / Case studies */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            margin-top: 18px
+        }
+
+        .card {
+            background: var(--card);
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(11, 23, 48, 0.04)
+        }
+
+        .card h3 {
+            margin: 6px 0 8px
+        }
+
+        .card p {
+            color: var(--muted);
+            font-size: 14px;
+            margin: 0
+        }
+
+        /* Testimonials */
+        .testimonials {
+            margin: 36px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px
+        }
+
+        .quote {
+            background: linear-gradient(180deg, #fff, #fbfdff);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(11, 23, 48, 0.04)
+        }
+
+        .quote p {
+            margin: 0;
+            color: var(--muted)
+        }
+
+        /* Footer */
+        footer {
+            padding: 36px 0;
+            border-top: 1px solid rgba(11, 23, 48, 0.06);
+            background: transparent
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 18px
+        }
+
+        .small {
+            font-size: 13px;
+            color: var(--muted)
+        }
+
+        /* Responsive tweaks */
+        @media (max-width:880px) {
+            h1 {
+                font-size: 28px
+            }
+
+            .hero {
+                flex-direction: column
+            }
+
+            .testimonials {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -29,7 +260,7 @@
                         d="M1 1h15M1 7h15M1 13h15" />
                 </svg>
             </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+           <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
                 <ul
                     class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-600 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                     <li>
@@ -51,18 +282,146 @@
                     </li>
                     <li>
                         <a href="simform.html"
-                            class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Simford
+                            class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Simform
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="java_ass6.html"
-                            class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Function
+                    <li>
+                        <a href="creative_tim.html"
+                            class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Creative Tim
                         </a>
-                    </li> -->
+                    </li>
+                    <li>
+                        <a href="Ticket.html"
+                            class="block py-2 px-3 text-white rounded-sm hover:bg-gray-600 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">Ticket Master
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav><br><br>
+
+
+    <!-- Real code  -->
+    <header>
+        <div class="wrap topbar">
+            <div class="logo"><img src="https://www.simform.com/wp-content/uploads/2024/12/simform-logo.svg" alt="logo"><span class="tex2"></div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#insights">Insights</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div><a class="cta-btn" href="#contact">Book a Consultation</a></div>
+        </div>
+        
+    </header>
+    <main class="wrap">
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="hero-left">
+                <div class="eyebrow">Engineering the next best thing for the digital world</div>
+                <h1>Agile in mind, spirit, and speed — we consult, design & engineer</h1>
+                <p class="lead">We build cloud-native platforms, AI/ML solutions, and product experiences that scale.
+                    Co-engineering teams to accelerate product roadmaps.</p>
+                <div class="hero-ctas">
+                    <a class="cta-btn" href="#contact">Book a Consultation Call</a>
+                    <a class="ghost" href="#case-studies">View Case Studies</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img class="hero-illustration"
+                    src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1200&q=80&auto=format&fit=crop"
+                    alt="hero illustration">
+            </div>
+        </section><!-- Trusted logos -->
+        <section class="trusted" aria-label="trusted by">
+            <img src="https://via.placeholder.com/110x28?text=Microsoft" alt="Microsoft">
+            <img src="https://via.placeholder.com/110x28?text=AWS" alt="AWS">
+            <img src="https://via.placeholder.com/110x28?text=Datadog" alt="Datadog">
+            <img src="https://via.placeholder.com/110x28?text=GCP" alt="GCP">
+        </section>
+
+        <!-- Case studies grid -->
+        <section id="case-studies">
+            <h2>Case Studies</h2>
+            <div class="grid">
+                <article class="card">
+                    <img src="https://via.placeholder.com/600x300?text=Semiconductor+Case" alt="case image"
+                        style="width:100%;border-radius:10px;margin-bottom:12px">
+                    <h3>Semiconductor Manufacturer boosts data accuracy 80%</h3>
+                    <p>Automation reduced order fulfilment lead time by 70% and provided real-time visibility across
+                        partners.</p>
+                </article>
+                <article class="card">
+                    <img src="https://via.placeholder.com/600x300?text=Cloud+Migration" alt="case image"
+                        style="width:100%;border-radius:10px;margin-bottom:12px">
+                    <h3>Manufacturer cuts quote time 70% with cloud integration</h3>
+                    <p>Seamless migration of legacy RFQ system to cloud—faster turnaround and unified workflows.</p>
+                </article>
+                <article class="card">
+                    <img src="https://via.placeholder.com/600x300?text=IoT+Solution" alt="case image"
+                        style="width:100%;border-radius:10px;margin-bottom:12px">
+                    <h3>Water treatment giant achieved zero-crash performance</h3>
+                    <p>Built resilient IoT stack with CI/CD and component-based mobile app for device management.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="quote">
+                <strong>“Unlike many firms, they approach work with a sense of ownership and urgency.”</strong>
+                <p class="small">— Head of Engineering, Leading Lifestyle & Wellness Platform</p>
+            </div>
+            <div class="quote">
+                <strong>“The team are extremely proactive across the full delivery lifecycle.”</strong>
+                <p class="small">— Product Manager, Global Consulting Company</p>
+            </div>
+        </section>
+
+        <!-- Featured insights -->
+        <section id="insights">
+            <h2>Featured Insights</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Product Engineering: TCO Guide</h3>
+                    <p class="small">A CTO’s guide to total cost of ownership for digital products — practical framework
+                        and checklists.</p>
+                </article>
+                <article class="card">
+                    <h3>Simform at MS Ignite — agentic AI</h3>
+                    <p class="small">Highlights and accelerators for bringing agentic AI to production on Azure.</p>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="wrap footer-grid">
+            <div>
+                <strong>Simform — clone</strong>
+                <p class="small">Engineering teams, product design, cloud & data solutions.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <p class="small">AI/ML · Cloud & DevOps · Data Engineering · UX</p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <p class="small">About · Careers · Contact</p>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <p class="small">Privacy · Terms</p>
+            </div>
+        </div>
+        <div class="wrap" style="padding-top:18px">
+            <p class="small">© 2025 Simform — HTML/CSS clone (for learning/project use only)</p>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 

@@ -1,0 +1,81 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketmaster</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-gray-900 text-white p-4">
+        <nav class="flex justify-between items-center">
+            <div class="text-2xl font-bold">Ticketmaster</div>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-gray-300">Concerts</a></li>
+                <li><a href="#" class="hover:text-gray-300">Sports</a></li>
+                <li><a href="#" class="hover:text-gray-300">Arts, Theater & Comedy</a></li>
+                <li><a href="#" class="hover:text-gray-300">Family</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gray-200 py-12">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Find Your Next Event</h1>
+            <input type="search" class="w-full p-2 pl-10 text-gray-700 rounded-lg" placeholder="Search for events">
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="py-12">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Popular Near You</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Add Flowbite card components here -->
+                <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="https://via.placeholder.com/400x200" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Coachella Valley Music and Arts Festival</h5>
+                        </a>
+                        <p class="font-normal text-gray-700 dark:text-gray-400">Alternative Rock</p>
+                    </div>
+                </div>
+                <!-- Add more cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Entertainment Guides Section -->
+    <section class="bg-gray-200 py-12">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Entertainment Guides</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Add Flowbite card components here -->
+                <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <a href="#">
+                        <img class="rounded-t-lg" src="https://via.placeholder.com/400x200" alt="" />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">NFL Tickets</h5>
+                        </a>
+                        <p class="font-normal text-gray-700 dark:text-gray-400">Get tickets to catch your favorite team live</p>
+                    </div>
+                </div>
+                <!-- Add more cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Add more sections here -->
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+</body>
+</html>
